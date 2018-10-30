@@ -3,15 +3,16 @@ package com.usdj.o2o.entity;
 import java.util.Date;
 
 public class Area {
-	private Integer areaId;
+	private Long areaId;
 	private String areaName;
+	private String areaDesc;
 	private Integer priority;
 	private Date createTime;
 	private Date lastEditTime;
-	public Integer getAreaId() {
+	public Long getAreaId() {
 		return areaId;
 	}
-	public void setAreaId(Integer areaId) {
+	public void setAreaId(Long areaId) {
 		this.areaId = areaId;
 	}
 	public String getAreaName() {
@@ -37,6 +38,18 @@ public class Area {
 	}
 	public void setLastEditTime(Date lastEditTime) {
 		this.lastEditTime = lastEditTime;
+	}
+	/**
+	 * @return the areaDesc
+	 */
+	public String getAreaDesc() {
+		return areaDesc;
+	}
+	/**
+	 * @param areaDesc the areaDesc to set
+	 */
+	public void setAreaDesc(String areaDesc) {
+		this.areaDesc = areaDesc;
 	}
 	
 	
