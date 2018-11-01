@@ -39,7 +39,7 @@ public interface ProductDao {
 	 * @param product
 	 * @return
 	 */
-	int insertProduct(ProductDao product);
+	int insertProduct(Product product);
 
 	/**
 	 * @param product

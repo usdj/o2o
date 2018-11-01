@@ -1,19 +1,26 @@
 package com.usdj.o2o.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class Product {
+public class Product implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3958074098876363013L;
 	private Long productId;
 	private String productName;
 	private String productDesc;
-	private String imgAddr;
+	private String imgAddr;// 简略图
 	private String normalPrice;
 	private String promotionPrice;
 	private Integer priority;
 	private Date createTime;
 	private Date lastEditTime;
 	private Integer enableStatus;
+	private Integer point;
+
 	private List<ProductImg> productImgList;
 	private ProductCategory productCategory;
 	private Shop shop;
@@ -94,6 +101,12 @@ public class Product {
 	}
 	public void setShop(Shop shop) {
 		this.shop = shop;
+	}
+	public Integer getPoint() {
+		return point;
+	}
+	public void setPoint(Integer point) {
+		this.point = point;
 	}
 	
 }
